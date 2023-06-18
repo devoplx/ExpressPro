@@ -1,11 +1,36 @@
 {
-  "name": "expressplus",
-  "version": "0.0.0",
-  "description": "Introducing ExpressEnhance, a powerful Node.js package designed to take your Express.js applications to the next level. With ExpressEnhance, you can effortlessly elevate the performance, functionality, and development experience of your Express.js projects.",
-  "main": "index.js",
+  "name": "@devoplx/expresspro",
+  "version": "1.0.0",
+  "description": "Introducing ExpressPro, the ultimate power-packed toolkit for professional-grade Express.js development. Elevate your applications with advanced performance optimization, streamlined middleware management, powerful routing enhancements, robust error handling, enhanced security features, developer-friendly tools, and an extensive plugin ecosystem.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "setup:git-hooks": "git config core.hooksPath .git-hooks",
-    "postinstall": "yarn run setup:git-hooks"
+    "setup:dev": "npm run setup:git-hooks",
+    "build": "tsup ",
+    "release": "npm run build && changeset publish"
+  },
+  "tsup": {
+    "dts": true,
+    "bundle": false,
+    "treeshake": true,
+    "target": "node16",
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "entry": [
+      "src/**/*.ts"
+    ]
   },
   "repository": {
     "type": "git",
@@ -26,5 +51,10 @@
   "bugs": {
     "url": "https://github.com/devoplx/expressplus/issues"
   },
-  "homepage": "https://github.com/devoplx/expressplus#readme"
+  "homepage": "https://github.com/devoplx/expressplus#readme",
+  "dependencies": {
+    "@changesets/cli": "^2.26.1",
+    "tsup": "^7.0.0",
+    "typescript": "^5.1.3"
+  }
 }
