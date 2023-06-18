@@ -1,0 +1,29 @@
+{
+  "name": "expressplus",
+  "version": "0.0.0",
+  "description": "Introducing ExpressEnhance, a powerful Node.js package designed to take your Express.js applications to the next level. With ExpressEnhance, you can effortlessly elevate the performance, functionality, and development experience of your Express.js projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devoplx/expressplus.git"
+  },
+  "keywords": [
+    "express",
+    "package",
+    "plus",
+    "enhance",
+    "performance",
+    "functionality",
+    "typed",
+    "typescript"
+  ],
+  "author": "Rj Manhas / devoplx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devoplx/expressplus/issues"
+  },
+  "homepage": "https://github.com/devoplx/expressplus#readme"
+}
