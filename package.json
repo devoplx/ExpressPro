@@ -4,7 +4,8 @@
   "description": "Introducing ExpressEnhance, a powerful Node.js package designed to take your Express.js applications to the next level. With ExpressEnhance, you can effortlessly elevate the performance, functionality, and development experience of your Express.js projects.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,10 @@
   "bugs": {
     "url": "https://github.com/devoplx/expressplus/issues"
   },
-  "homepage": "https://github.com/devoplx/expressplus#readme"
+  "homepage": "https://github.com/devoplx/expressplus#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "husky": "^8.0.0"
+  }
 }
