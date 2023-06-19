@@ -22,6 +22,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: publish
-        run: npm run publish
+        run: npm run release
 
       # - name: Send a Slack notification if a publish happens
