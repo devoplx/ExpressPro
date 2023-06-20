@@ -7,6 +7,7 @@ import loadMiddlewareLibs from "./helpers/middleware"
 const option = {
     helmet: true,
     compression: true,
+    userAgent: true,
 }
 
 // creates the init function

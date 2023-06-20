@@ -1,5 +1,12 @@
 # @devoplx/expresspro
 
+## 1.3.0
+
+### Minor Changes
+
+- added compression
+- added useragent middleware
+
 ## 1.2.2
 
 ### Patch Changes
