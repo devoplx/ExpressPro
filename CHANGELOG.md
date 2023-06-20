@@ -1,5 +1,17 @@
 # @devoplx/expresspro
 
+## 1.2.2
+
+### Patch Changes
+
+- fixed bundler
+
+## 1.2.1
+
+### Patch Changes
+
+- changed export
+
 ## 1.2.0
 
 ### Minor Changes

@@ -1,9 +1,10 @@
 import express from 'express';
-import init from '../../src/index';
+import init from '../../../src/index';
 
 const app = express();
 
-init(app, {helmet: true});
+
+init(app);
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
@@ -12,3 +13,5 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
     console.log('Example app listening on port 3000!');
     });
+
+
